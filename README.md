@@ -9,7 +9,7 @@ A Function Replace class for replace existing function within file replaced with
 **$from_fn**  
 *(string)* (Required) Name of the script. Should be unique. Default Value: ''
 
-**$src**  
+**$to_fn**  
  *(string)* (Required) Full URL of the script, or path of the script relative to the WordPress root directory. Default value: ''
 
 **$replace**  

@@ -20,6 +20,18 @@ Class Name ``FunctionReplace``
 ```php
 <?php
 
+function old_fn () {
+  echo 'Hi, Dev';
+}
+
+function new_fn ($str = '', $is_array) {
+  if (!$is_array) {
+    return $str;
+  }
+  
+  return str_split($str);
+}
+
 // Just want to see the output
 $fn_replace = new FunctionReplace('old_fn', 'new_fn');
 echo $fn_replace->output;

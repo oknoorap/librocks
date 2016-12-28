@@ -6,7 +6,8 @@ PHP is one of my favorites programming language, because WordPress use it. Altho
 A Function Replace class for replace existing function within file replaced with another function. Including it's parameters.
 
 ### Usage
-Class Name ``FunctionReplace``
+**Class Name**: ``FunctionReplace``  
+**File Name**: ``class-fn-replace.php``
 
 **$from_fn**  
 *(string)* (Required) Name of the script. Should be unique. Default Value: ''

@@ -1,22 +1,22 @@
 # librocks :metal:
 
-PHP is one of my favorites programming language, because WordPress use it. Although PHP community is not solid like Javascript, I'm still developing some of PHP codes until today. So I made this library collection for my needs.
+PHP is one of my favorites programming language, after golang and javascript, because WordPress using it. Although PHP community is not progressive like js community, I still write some PHP codes until today. So I made this library just for my collection.
 
 ## Function Replace
-A Function Replace class for replace existing function within file replaced with another function. Including it's parameters.
+A Function Replace class to replace existing function within file and replaced with another function. Including it's parameters.
 
 **Class**: ``FunctionReplace``  
 **File**: ``class-fn-replace.php``
 
 ### Usage
 **$from_fn**  
-*(string)* (Required) Name of the script. Should be unique. Default Value: ''
+*(string)* (Required) Name of origin function. Default Value: ''
 
 **$to_fn**  
- *(string)* (Required) Full URL of the script, or path of the script relative to the WordPress root directory. Default value: ''
+ *(string)* (Required) Name of replace function. Default value: ''
 
 **$replace**  
-(boolean) (Optional) Whether you want to replace function's file.
+(boolean) (Optional) Whether you want to rewrite file or just see the output. Default value: `false`
 
 ```php
 <?php
@@ -40,7 +40,7 @@ echo $fn_replace->output;
 // Replace file
 $fn_replace = new FunctionReplace('old_fn', 'new_fn', true);
 
-if ($fn_replace->status()) {
+if ($fn_replace->succeed()) {
   echo 'Succeed';
 } else {
   echo 'Noop';

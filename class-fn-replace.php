@@ -6,7 +6,7 @@
 */
 
 /**
- * A Function Replace class for replace existing function within file replaced with another function.
+ * A Function Replace class to replace existing function within file replaced with another function.
  * Including it's parameters.
  */
 class FunctionReplace {
@@ -68,7 +68,7 @@ class FunctionReplace {
    * Get lines of file
    * @param  string $fn_name
    * @param  array $is_array
-   * @return array\
+   * @return array
    */
   public function get_lines ($fn_name, $is_array = true) {
     $file = $this->get_file($fn_name);
